@@ -1,5 +1,5 @@
 {
-    "name": "ju-nu/amazon-collector",
+    "name": "yourname/amazon-collector",
     "description": "An Amazon ASIN collector optimized for PHP 8.3",
     "type": "project",
     "require": {

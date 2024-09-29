@@ -23,7 +23,7 @@ This project collects Amazon ASINs based on search terms retrieved from Shopware
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourname/amazon-collector.git
+   git clone https://github.com/ju-nu/amazon-collector.git
    cd amazon-collector
    ```
 

@@ -1,0 +1,19 @@
+{
+    "name": "ju-nu/amazon-collector",
+    "description": "An Amazon ASIN collector optimized for PHP 8.3",
+    "type": "project",
+    "require": {
+        "php": "^8.3",
+        "guzzlehttp/guzzle": "^7.5",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shopware\\": "src/Shopware/",
+            "Rainforest\\": "src/Rainforest/",
+            "Amazon\\": "src/Amazon/"
+        }
+    },
+    "minimum-stability": "stable",
+    "license": "MIT"
+}

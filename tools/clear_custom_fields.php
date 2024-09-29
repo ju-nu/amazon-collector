@@ -1,9 +1,21 @@
 <?php
+declare(strict_types=1);
+
+require __DIR__ . '/../vendor/autoload.php'; // Adjust path as needed
+
+use Shopware\Client as ShopwareClient;
+use Dotenv\Dotenv;
+
+// Load environment variables
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
 
 // Shopware API credentials
-const SHOPWARE_API_BASE_URI = 'https://www.real-markt.de';
-const SHOPWARE_CLIENT_ID = 'SWUAUKHGDGV0OU9SU0NND0ZPVG';
-const SHOPWARE_CLIENT_SECRET = 'Rm5ZU2IxZ1JZZEpwd3h6Z1A2MEQ3NE9SQlowQ2J5QnUyN3FrUXE';
+// Retrieve environment variables and then define constants
+define('SHOPWARE_API_BASE_URI', $_ENV['SHOPWARE_API_BASE_URI'] ?? 'https://default-api-url.com');
+define('SHOPWARE_CLIENT_ID', $_ENV['SHOPWARE_CLIENT_ID'] ?? 'default-client-id');
+define('SHOPWARE_CLIENT_SECRET', $_ENV['SHOPWARE_CLIENT_SECRET'] ?? 'default-client-secret');
+
 
 /**
  * Get Shopware API access token

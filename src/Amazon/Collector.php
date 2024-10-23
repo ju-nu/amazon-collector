@@ -129,12 +129,14 @@ class Collector
             $body = [
                 "name" => $collectionName,
                 "enabled" => true,
-                "schedule_type" => "manual",
+                "schedule_type" => "weekly",
+                "schedule_days_of_week" => strval(rand(0, 5)),
+                "schedule_hours" => strval(rand(0, 5)),
                 "priority" => "normal",
                 "notification_webhook" => 'https://webhook.real-markt.de/import.php',
                 "requests_type" => 'product',
                 "notification_as_json" => true
-            ];
+            ];            
 
             $response = $this->rainforestClient->request('POST', 'collections', [
                 'json' => $body

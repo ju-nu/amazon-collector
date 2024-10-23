@@ -131,7 +131,7 @@ class Collector
                 "enabled" => true,
                 "schedule_type" => "manual",
                 "priority" => "normal",
-                "notification_webhook" => 'https://webhook.real-markt.de/import.html',
+                "notification_webhook" => 'https://webhook.real-markt.de/import.php',
                 "requests_type" => 'product',
                 "notification_as_json" => true
             ];
